@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetris</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="grid">
+      <canvas id="js-board"></canvas>
+      <div class="rightCol">
+        <h1>TETRIS</h1>
+        <div class="info">
+          <div class="usage">rotate</div>
+          <div class="key">↑(w)</div>
+          <div class="usage">move block</div>
+          <div class="key">←(a), →(d), ↓(s)</div>
+        </div>
+        <div class="info">
+          <h2>
+            score
+            <div class="js-score num">0</div>
+          </h2>
+          <h2>
+            level
+            <div class="js-level num">1</div>
+          </h2>
+          <div></div>
+        </div>
+        <button class="js-startBtn">start (enter)</button>
+        <button class="js-resetBtn">reset (r)</button>
+      </div>
+    </div>
+
+    <script src="const.js"></script>
+    <script src="block.js"></script>
+    <script src="board.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
